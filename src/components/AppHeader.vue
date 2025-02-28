@@ -5,21 +5,21 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header class="px-5">
 
-    <section class="link-header d-flex justify-content-between align-items-center">
+    <section class="link-header d-flex justify-content-between align-items-center mx-2">
       
     
       <!--LINK HEADER-->
       <div class="d-md-flex d-none gap-3 align-items-center justify-content-center">
         <router-link :to="{ name: 'home' }">HOME</router-link>
-        <router-link :to="{ name: 'schedule' }"> ORARI</router-link>
-        <router-link :to="{ name: 'sedi' }">SEDI</router-link>
+        <router-link :to="{ name: '' }">CONTATTI <i class="fa-solid fa-caret-down"></i></router-link>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
       </div>
 
         <!--LOGHI SOCIAL-->
         <div class="d-md-flex d-none gap-3">
-        W.C.R.A.
+        <b>W.C.R.A.</b>
       </div>
        
       
@@ -71,12 +71,16 @@ export default {
 <style scoped lang="scss">
 
 header {
-  height: 10vh;
+  min-height: 5vh;
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 10px 0;
+
 
   .link-header {
     height: 100%;
-    padding: 0 50px 0 50px;
   }
 
   a, i {

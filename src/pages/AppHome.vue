@@ -23,9 +23,9 @@ export default {
         <MainLayout></MainLayout>
       </AnimatedSection>
 
-        <!-- <AnimatedSection>
+        <AnimatedSection>
           <AppFooter></AppFooter>
-        </AnimatedSection> -->
+        </AnimatedSection>
         
 </template>
 

@@ -1,7 +1,7 @@
 <script>
 
 export default {
-  name: 'AppSchedule',
+  name: 'AppCorsi',
 
 }
 </script>

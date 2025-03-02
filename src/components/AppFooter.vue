@@ -9,7 +9,8 @@ export default {
 
     <footer class="footer px-5 pb-5">   
       <div class="d-flex justify-content-between m-2">
-        <div> CONTATTACI </div>
+        <router-link :to="{ name: 'contatti' }">CONTATTACI</router-link>
+
         <div>W.C.R.A. © 2025</div>
       </div>
      

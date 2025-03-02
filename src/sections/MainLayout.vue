@@ -17,32 +17,42 @@ export default {
 
     <section class=" d-lg-flex px-5">
         <div class="d-flex cards mb-xm-2">
-            <div class="ms-card m-2">
-                <img src="../../public/tatami.jpg" alt="">
-                <div class="title">L'ACCADEMIA</div>
-                <div class="shadow"></div>
+            <div class="ms-card m-2">  
+                <router-link :to="{ name: 'accademia' }">
+                    <img src="../../public/tatami.jpg" alt="">
+                    <div class="title">L'ACCADEMIA</div>
+                    <div class="shadow"></div>
+                </router-link>
             </div>
 
             <div class="ms-card  m-2">
-                <img src="../../public/maestro.webp" alt="">
-                <div class="title">IL MAESTRO</div>
-                <div class="shadow"></div>
+             
+                <router-link :to="{ name: 'maestro' }">
+                    <img src="../../public/maestro.webp" alt="">
+                    <div class="title">IL MAESTRO</div>
+                    <div class="shadow"></div>
+                </router-link>
             </div>
 
         </div>
 
-
         <div class="d-flex cards ">
             <div class="ms-card  m-2">
-                <img src="../../public/team.webp" alt="">
-                <div class="title">I CORSI</div>
-                <div class="shadow"></div>
+                
+                <router-link :to="{ name: 'corsi' }">
+                    <img src="../../public/group.jpg" alt="">
+                    <div class="title">I CORSI</div>
+                    <div class="shadow"></div>
+                </router-link>
             </div>
 
             <div class="ms-card  m-2">
-                <img src="../../public/sala.jpg" alt="">
-                <div class="title">LE SEDI</div>
-                <div class="shadow"></div>
+           
+                <router-link :to="{ name: 'sedi' }">
+                    <img src="../../public/sala.jpg" alt="">
+                    <div class="title">LE SEDI</div>
+                    <div class="shadow"></div>
+                </router-link>
             </div>
 
         </div>
@@ -51,9 +61,11 @@ export default {
     <!--Main Card-->
     <section class="p-5 mt-3">
             <div class="main-card m-2">
-                <img src="../../public/team.webp" alt="">
-                <div class="title">COMPETITION</div>  
-                <div class="shadow"></div>     
+                <router-link :to="{ name: 'competition' }">
+                    <img src="../../public/team.webp" alt="">
+                    <div class="title">COMPETITION</div>  
+                    <div class="shadow"></div>    
+                </router-link>   
             </div>
 
     </section>
@@ -71,7 +83,7 @@ export default {
     
         img{
             width: 100%;
-            height: 80vh;
+            max-height: 80vh;
         }
     }
 

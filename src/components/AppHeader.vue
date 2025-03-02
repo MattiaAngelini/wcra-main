@@ -13,7 +13,7 @@ export default {
       <!--LINK HEADER-->
       <div class="d-md-flex d-none gap-3 align-items-center justify-content-center">
         <router-link :to="{ name: 'home' }">HOME</router-link>
-        <router-link :to="{ name: '' }">CONTATTI <i class="fa-solid fa-caret-down"></i></router-link>
+        <router-link :to="{ name: 'contatti' }">CONTATTI <i class="fa-solid fa-caret-down"></i></router-link>
         <a href=""><i class="fa-brands fa-instagram"></i></a>
       </div>
 
@@ -56,10 +56,10 @@ export default {
             <router-link :to="{ name: 'home' }">Home</router-link>
           </div>
           <div>
-            <router-link :to="{ name: 'schedule' }">Orari</router-link>
+            <router-link :to="{ name: 'corsi' }">Corsi</router-link>
           </div>
           <div>
-            <router-link :to="{ name: 'sedi' }">Contatti</router-link>
+            <router-link :to="{ name: 'sedi' }">Sedi</router-link>
           </div>
         </div>
       </div>

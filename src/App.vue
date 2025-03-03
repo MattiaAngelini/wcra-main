@@ -1,16 +1,22 @@
 <script>
 import AnimatedSection from './components/AnimatedSection.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 export default {
 
   components: {
     AnimatedSection,
+    AppHeader,
+    AppFooter,
   }
 }
 </script>
 
 <template>
   <AnimatedSection>
+    <AppHeader class="header"></AppHeader>
     <router-view class="fade-in delay"></router-view>
+    <AppFooter></AppFooter>
   </AnimatedSection>
 </template>
 
